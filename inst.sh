@@ -7,6 +7,6 @@ sshpass -p asdf3 ssh puser@10.203.92.232 cat /u01/gnu/eksportal.org/public_page/
 echo "$DSOCOUNT" > acount
 
 if [ "$DSOCOUNT" -gt "$ACOUNT" ]; then
-    echo "$DSOCOUNT" > acount
+    echo "$DSOCOUNT" > $ACOUNT
     /u01/distr/tlg/telegram -t 1152884180:AAEzbinHoNosvrgNQO7y_A_Fm0Ta_jVo1Vg -c -1001376744472 "started install num $DSOCOUNT"
 fi
