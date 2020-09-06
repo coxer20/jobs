@@ -38,7 +38,7 @@ def main(argv):
     parser.add_argument('-m', '--Mode', type=str, nargs='?', help='Mode [s:service, t:test-mode]', required=True)
     
     args = parser.parse_args()
-    Execute(Mode = args.Mode)
+    Execute(mode = args.Mode)
 
 if __name__ == "__main__":
     main(sys.argv[1:])
